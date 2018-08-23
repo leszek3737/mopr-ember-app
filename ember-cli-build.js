@@ -4,6 +4,11 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    sassLint: {
+      configPath: '.sass-lint.yml',
+      shouldThrowExceptions: true,
+      shouldLog: true
+    }
     // Add options here
   });
 
