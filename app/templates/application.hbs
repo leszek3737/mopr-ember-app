@@ -1,7 +1,11 @@
 <section id="step1" class="step view">
         <legend>step 1 - wybierz dom pomocy społecznej </legend>
         <fieldset id="dps">
-            <select name="dps"></select>
+            <select name="dps">
+                {{#each dps as |dps|}}
+                <option value={{dps.id}}>{{dps.name}}</option>
+                {{/each}}
+            </select>
         </fieldset>
         <button class="nextStep">dalej</button>
 </section>
